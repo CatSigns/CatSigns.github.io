@@ -1,0 +1,471 @@
+@font-face {
+    font-family: 'inter';
+    font-weight: 400;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'inter';
+    font-weight: 500;
+    src: url(../fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'inter';
+    font-weight: 700;
+    src: url(../fonts/Inter-SemiBold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+html {
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.4em;
+    color: black;
+}
+
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1600px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin: 0 auto;
+    font-family: 'inter';
+    
+}
+h1,
+h2 {
+    font-size: 48px;
+}
+.image img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 40px 0;
+    font-family: 'inter';
+    background-color: transparent;
+    &__container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__logo {
+        width: 174px;
+        height: 56px;
+        margin-right: 400px;
+        border-radius: 3px;
+    
+    
+    }
+    &__menu {
+        display: flex;
+        list-style: none;
+        font-weight: 400;
+        font-size: 14px;
+
+    }
+    
+    &__menu {
+        flex-grow: 1;
+        justify-content: flex-end;
+        margin-right: 50px;
+    }
+    
+    &__menu li {
+     margin-right: 40px;
+    }
+    
+    
+    
+    &__menu li:last-child {
+        margin-right: 0;
+    
+    }
+    
+    &__menu a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+
+.vision {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    min-height: 800px;
+    padding: 50px 0;
+    padding-top: 180px;
+    font-family: 'inter';
+    background-image: url(../img/Rectangle\ 17.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    &__title {
+        margin: 0;
+        margin-bottom: 2rem;
+        font-size: 4.5rem;
+        
+font-style: normal;
+font-weight: 700;
+
+line-height: 50%;
+    }
+    &__list {
+        display: flex;
+        gap: 2px;
+        width: 430px;
+        margin-bottom: 3rem;
+        font-size: 0.8rem;
+    }
+    
+&__title span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+}
+    
+    &__list li {
+        max-width: 280px;
+        padding: 30px;
+       
+        font: 400 16px/1.3em 'inter';
+        background-color: rgba(0, 0, 0, 0.16);
+    }
+    
+    &__list a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    
+        font-weight: 700;
+        color: aqua;
+        text-decoration: none;
+    }
+    &__picture-2{
+        
+        width: 550px;
+        height: 570px;
+        
+    }
+    &__btn{
+        width: 185px;
+        height: 45px;
+        padding: 12px 24px;
+        margin-right: 1.25rem;
+        border: 1px solid white;
+        border-radius: 2px;
+        color: white;
+    }
+    &__btn:hover{
+        background-color: red;
+    }
+
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 800px;
+    padding: 50px 0;
+    padding-top: 180px;
+    font-family: 'inter';
+    &__container{
+        margin-right: 120px;
+    }
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 58px;
+        color: #1D1C1A;
+    }
+    &__title span{
+        color: #AB242F;
+    }
+    &__text{
+        width: 630px;
+        margin-bottom: 90px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #2B2B2B;
+    }
+    &__txt{
+        width: 630px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #1D1C1A;
+
+    }
+    &__txt span{
+        
+        color: #AB242F;
+    }
+    &__image{
+width: 520px;
+height: 500px;
+margin-bottom: 90px;
+    }
+    &__text-2{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 140%;
+       color: #1D1C1A;
+    }
+    &__text-2 span{
+        color: #AB242F;
+ }
+}
+.course{
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    min-height: 800px;
+    padding: 50px 0;
+    padding-top: 180px;
+    font-family: 'inter';
+    
+    &__container{
+
+    }
+    &__image{
+        width: 800px;
+        height: 520px;
+        margin-left: -135px;
+background-image: url(../img/Rectangle\ 03.png);
+background-repeat: no-repeat;
+background-size: cover;
+
+    }
+    &__titles{
+        margin-left: 100px;
+        text-align: start;
+    }
+    &__title{
+        width: 670px;
+        margin-left: -330px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #1D1C1A;
+    }
+    &__title span{
+        color: #EEEEEE;
+    }
+    &__text{
+       
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #2B2B2B;
+    }
+    &__txt{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #1D1C1A;
+    }
+ 
+}
+.cards{
+
+    &__title{
+width: 226px;
+height: 28px;
+font-family: 'inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+color: #1D1C1A;
+    }
+    &__boxes{
+        display: grid;
+        grid-template-columns: 300px 515px 410px;
+        gap: 25px;
+        height: 420px;
+    
+        align-content: center;
+        
+    }
+    &__box1{
+        
+         background: #EEEEEE;
+        }
+    &__box2{
+    
+         background: #EEEEEE;
+    }
+  
+    &__box3{
+    
+background: #EEEEEE;
+    }
+    &__box2 li ,&__box3 li {
+        list-style-type: disc;
+    }
+    &__box1, &__box2, &__box3{
+        padding: 40px 50px;
+    }
+}
+
+.study{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 800px;
+    padding: 50px 0;
+    padding-top: 180px;
+   
+    &__info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__info{
+
+    }
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #1D1C1A;
+    }
+    &__title span{
+        color: #AB242F;
+    }
+    &__text{
+        
+        width: 455px;
+        margin-left: 85px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+       
+        color: #2B2B2B;
+    }
+    &__image{
+        
+width: 55px;
+height: 55px;
+    }
+    &__allcards{
+        display: flex; 
+    }
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        
+        width: 400px;
+
+    }
+    &__cards__box{
+        display: flex;
+        flex-direction: column;
+        
+        width: 600px;
+    }
+}
+
+.forma{
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    min-height: 800px;
+    padding: 50px 0;
+    padding-top: 180px;
+    background-image: url(../img/Rectangle\ 20.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    &__image{
+        height: 580px;
+    }
+&__container{
+    background-image: url(../img/Rectangle\ 20.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+&__title{
+
+}
+}
+.footer{
+    
+}
+
+/*adaptiv*/
+@media (min-width:1300px){
+    .main-screen__container{
+        grid-template-columns: 21.95rem 37.8rem;
+    }
+    .container{
+        max-width: 85%;
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
